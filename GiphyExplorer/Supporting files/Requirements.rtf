@@ -1,0 +1,66 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf100
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset0 Georgia;\f2\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red42\green46\blue57;\red249\green249\blue249;\red49\green209\blue173;
+\red184\green14\blue61;\red247\green238\blue241;}
+{\*\expandedcolortbl;;\cssrgb\c21569\c23922\c28627;\cssrgb\c98039\c98039\c98039;\cssrgb\c20784\c84314\c73333;
+\cssrgb\c78039\c14510\c30588;\cssrgb\c97647\c94902\c95686;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid2\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs57\fsmilli28800 \cf2 \cb3 \expnd0\expndtw0\kerning0
+GIF Searcher\
+\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb3 Using the {\field{\*\fldinst{HYPERLINK "https://github.com/Giphy/GiphyAPI"}}{\fldrslt \cf4 Giphy API}}, create an app to be able to search for GIFs.\
+\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs46 \cf2 \cb3 Requirements\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\f1\b0\fs28 \cf2 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+GIFs must animate.\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+GIFs must be pronounced GIF.\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+The main view should:\cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+Show a list of {\field{\*\fldinst{HYPERLINK "https://github.com/Giphy/GiphyAPI#trending-gifs-endpoint"}}{\fldrslt \cf4 Trending}} GIFs.\cb1 \
+\ls1\ilvl1\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+Show a search bar so a user can find a GIF.\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+After the user searches for a term, app will display results of search right there in the main view.\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+You can use HTTP libraries like {\field{\*\fldinst{HYPERLINK "https://github.com/square/retrofit"}}{\fldrslt \cf4 Retrofit}}/{\field{\*\fldinst{HYPERLINK "http://square.github.io/okhttp/"}}{\fldrslt \cf4 OKHttp}}, {\field{\*\fldinst{HYPERLINK "https://developer.apple.com/library/ios/documentation/Foundation/Reference/NSURLSession_class/"}}{\fldrslt \cf4 NSURLSession}}/{\field{\*\fldinst{HYPERLINK "https://github.com/AlamoFire/AlamoFire"}}{\fldrslt \cf4 AlamoFire}}, but not API clients like {\field{\*\fldinst{HYPERLINK "https://github.com/Beefsoft/GiphyAndroidApi"}}{\fldrslt \cf4 GiphyAndroidApi}} or {\field{\*\fldinst{HYPERLINK "https://github.com/heyalexchoi/Giphy-iOS"}}{\fldrslt \cf4 Giphy-iOS}}.\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Caution: Giphy API may send down height and width properties as a String instead of a float.\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+You may use 3rd party dependencies through CocoaPods, Carthage, and Gradle in helping you build your app. If you use CocoaPods or Gradle, please don't commit 3rd party source code.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 \cb1 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 Your solution should include a 
+\f2 \AppleTypeServices\AppleTypeServicesF65538 \cf5 \cb6 README
+\f1 \AppleTypeServices \cf2 \cb3  explaining how to set up and run the project.\cb1 \
+\cb3 Please tackle the large ViewController problem with a design pattern e.g.: {\field{\*\fldinst{HYPERLINK "https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel"}}{\fldrslt \cf4 MVVM}}.\cb1 \
+\cb3 Bonus points for a nice and interesting UI.\cb1 \
+\cb3 The following languages are acceptable: Swift, Java, and {\field{\*\fldinst{HYPERLINK "https://kotlinlang.org/"}}{\fldrslt \cf4 Kotlin}}.}
