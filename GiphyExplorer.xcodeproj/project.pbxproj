@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		63ED71342BBD07201852930D /* Pods_GiphyExplorer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7A701A0A879051D35B2180 /* Pods_GiphyExplorer.framework */; };
+		F84095EF1FC111060082688E /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84095EE1FC111060082688E /* Toast.swift */; };
 		F8413B961FBF2FD30094DB5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8413B951FBF2FD30094DB5E /* AppDelegate.swift */; };
 		F8413B981FBF2FD30094DB5E /* GiphyMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8413B971FBF2FD30094DB5E /* GiphyMainViewController.swift */; };
 		F8413B9B1FBF2FD30094DB5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8413B991FBF2FD30094DB5E /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		2C7A701A0A879051D35B2180 /* Pods_GiphyExplorer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GiphyExplorer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E7CC305193FF15C8051C43F /* Pods-GiphyExplorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiphyExplorer.release.xcconfig"; path = "Pods/Target Support Files/Pods-GiphyExplorer/Pods-GiphyExplorer.release.xcconfig"; sourceTree = "<group>"; };
 		9B2CABBCFC072ADDBB88090F /* Pods-GiphyExplorer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiphyExplorer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GiphyExplorer/Pods-GiphyExplorer.debug.xcconfig"; sourceTree = "<group>"; };
+		F84095EE1FC111060082688E /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		F8413B921FBF2FD30094DB5E /* GiphyExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiphyExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8413B951FBF2FD30094DB5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8413B971FBF2FD30094DB5E /* GiphyMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyMainViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 		F85B839B1FBFB26100B75ED9 /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
+				F84095EE1FC111060082688E /* Toast.swift */,
 				F8413B951FBF2FD30094DB5E /* AppDelegate.swift */,
 				F8413B991FBF2FD30094DB5E /* Main.storyboard */,
 				F8413B9C1FBF2FD30094DB5E /* Assets.xcassets */,
@@ -288,14 +291,12 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -349,6 +350,7 @@
 				F8413BB71FBF34560094DB5E /* FetchGifs.swift in Sources */,
 				F89B7EC61FC0786D00D77A92 /* ConstantUrls.swift in Sources */,
 				F85B83951FBF69AF00B75ED9 /* GiphyExplorerCollectionViewController.swift in Sources */,
+				F84095EF1FC111060082688E /* Toast.swift in Sources */,
 				F8413B961FBF2FD30094DB5E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
