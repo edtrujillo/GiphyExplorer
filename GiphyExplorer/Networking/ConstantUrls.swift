@@ -9,7 +9,7 @@
 import Foundation
 
 fileprivate struct Constants {
-    static let limitOfImages: Int = 50
+    static let limitOfImages: Int = 200
     static let giphyAPIKey: String = "WhJR1a74kezphEzwzNs9tqz1rXhTdwNV"
     
     static let searchGif1: String = "https://api.giphy.com/v1/gifs/search?q="

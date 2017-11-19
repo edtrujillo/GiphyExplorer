@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Toast_Swift
 
 class GiphyMainViewController: UIViewController, UISearchBarDelegate {
     
@@ -24,6 +25,8 @@ class GiphyMainViewController: UIViewController, UISearchBarDelegate {
         searchBar.delegate = self
         
         // start off with the trending gifs rather than an empty screen
+        self.view?.makeToastActivity(.center)
+
         fetchTrendingGifs { (gifs) in
             self.reloadCollectionView(gifs: gifs)
         }
@@ -36,9 +39,9 @@ class GiphyMainViewController: UIViewController, UISearchBarDelegate {
     // shared function to dismiss keyboard, set the gifs on our collection vc and
     // then redraw the collection view cells
     private func reloadCollectionView(gifs : [Gif]) {
-        searchBar.resignFirstResponder()
         self.collectionVC?.gifs = gifs
         self.collectionVC?.collectionView?.reloadData()
+        self.view?.hideToastActivity()
     }
 }
 
@@ -46,7 +49,12 @@ class GiphyMainViewController: UIViewController, UISearchBarDelegate {
 
 extension GiphyMainViewController {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+
         if let searchText = searchBar.text {
+            self.reloadCollectionView(gifs: [])
+            self.view?.makeToastActivity(.center)
+            
             // non-empty search text from search bar ... fetch the searched gifs
             if searchText.count > 0 {
                 fetchSearchedGifs(searchText, { (gifs) in
