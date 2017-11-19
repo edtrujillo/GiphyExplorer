@@ -26,7 +26,7 @@ func fetchSearchedGifs(_ searchTerm: String?, _ completion:@escaping ([Gif]) -> 
     fetchGifs(path, completion)
 }
 
-func fetchGifs(_ path:String, _ completion:@escaping ([Gif]) -> Void) {
+private func fetchGifs(_ path:String, _ completion:@escaping ([Gif]) -> Void) {
     
     Alamofire.request(path, headers:nil).responseJSON { response in
         if let alamoJson = response.result.value {
