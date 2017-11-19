@@ -6,9 +6,9 @@ This app requires CocoaPods and the following cocoapods libraries:
 * Kingfisher
 * Alamofire
 * SwiftyJson
-* Toast-Swift
 
-After cloning the project to your system, simply open a Terminal window and change directory to the GiphyExplorer folder.  Run the command
+
+After cloning the project to your system, simply open a Terminal window and change directory to the GiphyExplorer folder.  Follow by running the command:
 
 pod install
 
