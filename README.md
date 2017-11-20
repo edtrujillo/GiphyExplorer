@@ -1,6 +1,8 @@
 # GiphyExplorer
 Explore the Giphy API in Swift
 
+This sample coding project simply required me to consume and display the GIF images dispensed by the Giphy API and code them in an iOS app.  No other UI/UX requirements were imposed.
+
 This app requires CocoaPods and the following cocoapods libraries:
 
 * Kingfisher
