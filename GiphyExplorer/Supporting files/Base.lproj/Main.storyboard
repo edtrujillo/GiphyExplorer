@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -96,7 +95,6 @@
                                 <connections>
                                     <outlet property="activityIndicator" destination="6yC-cc-hm8" id="yc6-J3-n3F"/>
                                     <outlet property="imageView" destination="42P-0P-haC" id="FcD-US-kfa"/>
-                                    <segue destination="yD2-5D-WLo" kind="show" identifier="SegueToDetails" id="DO8-b5-S6W"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -107,6 +105,7 @@
                     </collectionView>
                     <connections>
                         <outlet property="searchDisplayController" destination="Zrs-aC-Jd1" id="Sda-IN-h83"/>
+                        <segue destination="yD2-5D-WLo" kind="show" identifier="SegueToDetails" id="BAw-Ls-de0"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eV2-xH-ErS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -125,7 +124,7 @@
         <scene sceneID="dJi-cy-XAG">
             <objects>
                 <tableViewController id="yD2-5D-WLo" customClass="GiphyDetailsTableViewController" customModule="GiphyExplorer" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Mzf-1z-eP5">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Mzf-1z-eP5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -217,7 +216,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell4" textLabel="gFO-fm-dba" style="IBUITableViewCellStyleDefault" id="Tk3-vF-uJW">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell4" textLabel="gFO-fm-dba" style="IBUITableViewCellStyleDefault" id="Tk3-vF-uJW">
                                         <rect key="frame" x="0.0" y="220" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tk3-vF-uJW" id="HCO-vy-h5C">
