@@ -52,28 +52,38 @@ class GiphyExplorerCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! GiphyExplorerCollectionViewCell
-
-        let spinningImageView = UIImageView(frame: cell.frame)
-        spinningImageView.image = Image(named:"giphy")
-        self.collectionView!.addSubview(spinningImageView)
         
-        spinningImageView.transform = CGAffineTransform(scaleX: 0.2, y: 0.2)
+        // temporarily disable taps on other cells while spinning
+        self.collectionView!.isUserInteractionEnabled = false
         
-        let animator = UIViewPropertyAnimator(duration: 0.5, curve: .linear, animations: {
-            for _ in 0..<10 {
-                let rotation = CGAffineTransform(rotationAngle: CGFloat(Double.pi))
-                spinningImageView.transform = spinningImageView.transform.concatenating(rotation)
-            }
-            let grow = CGAffineTransform(scaleX: 5.0, y: 5.0)
-            spinningImageView.transform = spinningImageView.transform.concatenating(grow)
-        })
+        let spinImage = Image(named:"giphy")
         
-        animator.addCompletion { (position) in
-            spinningImageView.removeFromSuperview()
+        spinningGlyph(with: cell.frame, inView: self.collectionView, duration: 0.5, withImage: spinImage) {
+            self.collectionView!.isUserInteractionEnabled = true
             self.performSegue(withIdentifier: segueToDetails, sender: self)
         }
-        
-        animator.startAnimation()
+
+//        let spinningImageView = UIImageView(frame: cell.frame)
+//        spinningImageView.image = Image(named:"giphy")
+//        self.collectionView!.addSubview(spinningImageView)
+//
+//        spinningImageView.transform = CGAffineTransform(scaleX: 0.2, y: 0.2)
+//
+//        let animator = UIViewPropertyAnimator(duration: 0.5, curve: .linear, animations: {
+//            for _ in 0..<10 {
+//                let rotation = CGAffineTransform(rotationAngle: CGFloat(Double.pi))
+//                spinningImageView.transform = spinningImageView.transform.concatenating(rotation)
+//            }
+//            let grow = CGAffineTransform(scaleX: 5.0, y: 5.0)
+//            spinningImageView.transform = spinningImageView.transform.concatenating(grow)
+//        })
+//
+//        animator.addCompletion { (position) in
+//            spinningImageView.removeFromSuperview()
+//            self.performSegue(withIdentifier: segueToDetails, sender: self)
+//        }
+//
+//        animator.startAnimation()
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
